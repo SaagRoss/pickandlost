@@ -1,0 +1,18 @@
+<view class="content">
+    <image class='background' src="../../images/background2.jpg" mode="aspectFill"></image>
+</view>
+
+<view class="user">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="text"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+
+<view class="text">{{text}}</view>

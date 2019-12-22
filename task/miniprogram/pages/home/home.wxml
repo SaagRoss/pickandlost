@@ -1,0 +1,21 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+
+<view>关于我们</view>
+<view>猛男：张子昂💪</view>
+<view>猛男：张煜宇💪</view>
+<view>猛男：张若尘💪</view>
+<view>猛男：张盈哲💪</view>
+<view>地址：北京邮电大学沙河校区</view>
+
+<view class="userinfo">
+<image class="userinfo-avatar" src="../../images/logo.jpg" background-size="cover"></image>
+<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+
+
+
+<view class="footer">
+勿以善小而不为！
+</view>
+</view>

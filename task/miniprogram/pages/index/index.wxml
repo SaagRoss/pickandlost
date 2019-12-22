@@ -1,0 +1,103 @@
+
+<scroll-view style="height: 100%;" scroll-y="true" scroll-top="{{scrollTop}}"> 
+  <view class="section">
+  <view class="choose">
+  <view class="pickers">
+    <view class="picker">
+          科技向善
+    </view>
+  </view>
+    
+    </view>
+    <button class="loginBtn" bindtap="F5">刷新</button>
+  </view>
+    <view class="tit">  
+      <view class="title_val">物品图片</view>  
+      <view class="more">物品信息</view>  
+    </view>  
+  
+  <view class="errorword" hidden="{{word}}">{{errorword}}</view> 
+  <view class="container" hidden="{{!word}}">  
+     
+
+      
+    <view class="goodslist">  
+         
+        <view class="goods">  
+          <!--左侧图片-->  
+          <view>  
+              <image src="{{pickimage}}" class="good-img" /> 
+          </view>  
+          <!--右侧说明部分-->  
+          <view class="good-cont">  
+             
+            <view class="goods-navigator">  
+                <text class="good-name">{{item.name}}</text>
+            </view>  
+              
+            <view class="type">  
+              <text>姓名：{{pickName}}</text>  
+            </view>  
+            <view class="type">  
+              <text>状态：{{pickType}}</text>  
+            </view>  
+              
+            <view class="num">  
+              <text>学号：{{pickNum}}</text>  
+            </view>  
+              
+            <view class="phone">  
+              <text>手机：{{pickPhone}}</text>  
+            </view>  
+
+            <view class="phone">  
+              <text>地点：{{pickindex}}</text>  
+            </view>  
+             
+            <view class="des">  
+              <text>详细信息：{{pickDes}}</text>  
+            </view>  
+          </view>      
+        </view>     
+
+
+
+      <view class="goods">  
+          <!--左侧图片-->  
+          <view>  
+              <image src="{{loseimage}}" class="good-img" /> 
+          </view>  
+          <!--右侧说明部分-->  
+          <view class="good-cont">  
+             
+            <view class="goods-navigator">  
+                <text class="good-name">{{item.name}}</text>
+            </view>  
+              
+            <view class="type">  
+              <text>姓名：{{loseName}}</text>  
+            </view>  
+            <view class="type">  
+              <text>状态：{{loseType}}</text>  
+            </view>  
+              
+            <view class="num">  
+              <text>学号：{{loseNum}}</text>  
+            </view>  
+              
+            <view class="phone">  
+              <text>手机：{{losePhone}}</text>  
+            </view>
+
+            <view class="phone">  
+              <text>地点：{{loseindex}}</text>  
+            </view>  
+             
+            <view class="des">  
+              <text>详细信息：{{loseDes}}</text>  
+            </view>  
+          </view>      
+        </view> 
+    </view>   
+  </view>    
+</scroll-view>

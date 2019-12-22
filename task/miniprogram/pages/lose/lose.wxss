@@ -1,0 +1,52 @@
+page{
+  height:100%;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.lose{
+  margin-left:60rpx;
+  align-content: center;
+  width:300rpx;
+  border: 8rpx groove rgb(148, 148, 247)
+}
+.button{
+  width: 50%;
+  background: rgb(57, 170, 245);/*背景颜色*/
+  color: #52f1dc;/*字体颜色*/
+  border-radius:50px; /*边角原弧度*/
+}
+.text{
+  text-align: center;
+}
+.text{
+  text-align: center;
+}
+.photo{
+  margin-right: 200rpx;
+  width:300rpx;
+  justify-content: center;
+  align-content: center;
+  margin-left: 200rpx;
+}
+.describe{
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start; 
+}
+.loser{
+  margin-left:20rpx;
+  align-content: center;
+  width:300rpx;
+  border: 8rpx outset rgb(148, 148, 247)
+}
+.pic{
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}

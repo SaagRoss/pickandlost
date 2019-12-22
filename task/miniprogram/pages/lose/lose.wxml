@@ -1,0 +1,25 @@
+<view class="content">
+    <image class='background' src="../../images/form.jpg" mode="aspectFill"></image>
+</view>
+<text>\n</text>
+<text>\n</text>
+<view class="describe">
+ <view class="lose">
+   <input  class="text" placeholder="请输入您的姓名" bindinput="name"></input>
+   <input  class="text" placeholder="请输入您的学号" maxlength="10" type="number" bindinput="num"></input>
+   <input  class="text" placeholder="请输入您的手机号" maxlength="11" type="number" bindinput="phone"></input>
+   <input  class="text" placeholder="请输入地点" bindinput="place"></input>
+  </view>
+  <view class="loser">
+   <textarea placeholder="细节描述：如品牌等" bindinput="des" auto-height></textarea>
+  </view>
+</view>
+<view class="photo" style="padding:1rem;">
+	<button type="primary" bindtap="chooseimage" class="pic">添加图片</button> 
+	<image src="{{tempFilePaths }}" mode="aspecFill" style="width:150rpx; height:150rpx;margin:1rem 0;"/>  
+</view>
+
+<button class="button" bindtap="sub">提交</button>
+
+
+
